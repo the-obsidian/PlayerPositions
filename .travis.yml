@@ -1,0 +1,13 @@
+language: java
+jdk:
+- oraclejdk8
+
+deploy:
+  provider: releases
+  api_key:
+    secure: c+ryMtzs7ckqTw7GgX35WkEKjYWlTMxIZMTjdGwJ/s4Oljm2tQWgSzri8cwXO/ygebGRna6tw2eY6qdjOeIFkjbnUFYWP0FhRaHR3yZIGe6YfKOXDBF21QyVja1/3fOodXRiOdVHuaWaI/9DxWbXjVmtaHIjQdcxb5JTwuUPZE4H22RP6YTY8xX5dVMetELVSP8vNu/UASENpv/itQzGtcKwRon2txoeo66eNGdjO4YHYzvCOilH5VG86L6rGbSzNaBqsjZohPoZOcYT77r6WpiwsD2w0f38aU/n7+dWrTqe5/nv3XgL9FDu2aIfPzSiku5Th0Kh3aiSJmApT6HzV++1uDoyDoVirsvM5oO5vSlOIRjtmyNjwUQQRTuz5jjehAvVxx9ciN2jaVPl6hDV0wAvDgKToFChSMO6myaYRAiI4rZ8f7i1bELoD4ErM9bscwiEo0k00hK3SZvBWgds5VObifMXlcdw46fE4jcbL/9a7jTiBREnqmeOERKuI9RqHhm2oGI2DVE30sgmoyyhwP6MKVToKSYimUmOCw+R8tlwmPs4zkEenDN5FkIBX8JbXzIMnbbygBtVUELnkGgwVtq3jIj4RRYwZDmkm7ZSmdhzac+unw5Kxdt3a5fxQhMXV36j2v8LIq7YnXwzzwt/smh22HoMdUov9NsXLzJ7k+A=
+  file: target/PlayerPositions-*.jar
+  file_glob: true
+  on:
+    repo: the-obsidian/PlayerPositions
+    tags: true
